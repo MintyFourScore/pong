@@ -11,7 +11,7 @@ ARM_NONE_EABI_PATH	?= $(WONDERFUL_TOOLCHAIN)/toolchain/gcc-arm-none-eabi/bin/
 # User config
 # ===========
 
-NAME		:= Basic Pong DS
+NAME		:= PongDS
 GAME_TITLE	:= PongDS.nds
 GAME_SUBTITLE	:= Minty's DS game
 GAME_AUTHOR	:= github.com/MintyFourScore/pongds

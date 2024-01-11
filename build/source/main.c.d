@@ -17,8 +17,8 @@ build/source/main.c.o: source/main.c \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/memory.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/ndma.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/nwram.h \
- /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/sha1.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/system.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/sha1.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/timers.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/touch.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/background.h \
@@ -41,14 +41,18 @@ build/source/main.c.o: source/main.c \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/input.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/keyboard.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/linkedlist.h \
- /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/nand.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/paddle.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/pcx.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/piano.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/rumble.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/sdmmc.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/sound.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/sprite.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/window.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2gyro.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2solar.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2tilt.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/dsp.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/fifo.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/tlf.h \
@@ -87,8 +91,8 @@ build/source/main.c.o: source/main.c \
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/memory.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/ndma.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/nwram.h:
-/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/sha1.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/system.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/sha1.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/timers.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/touch.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/background.h:
@@ -111,14 +115,18 @@ build/source/main.c.o: source/main.c \
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/input.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/keyboard.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/linkedlist.h:
-/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/nand.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/paddle.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/pcx.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/piano.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/rumble.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/sdmmc.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/sound.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/sprite.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/window.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2gyro.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2solar.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2tilt.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/dsp.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/fifo.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/tlf.h:
