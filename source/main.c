@@ -8,12 +8,14 @@ u8 ballVertSpeed=1;
 u8 ballHoriSpeed=1;
 s16 ballX=128;
 s16 ballY=81;
+s16 res_width=256;
+s16 res_height=192;
 char coords[64];
 int main(int argc, char **argv)
 {
     s8 movespeed=2;
     s16 player_x=96;
-    u8 ballActiveScreen=1;
+    //u8 ballActiveScreen=1;
     NF_Set2D(0,0);
     NF_Set2D(1,0);
     nitroFSInit(NULL);
@@ -51,37 +53,26 @@ int main(int argc, char **argv)
     NF_CreateSprite(1,0,1,0,player_x,160);
     NF_CreateSprite(1,1,2,1,ballX,ballY); //Make the ball or something
     while (1){
-        NF_UpdateTextLayers();
+        ballX += ballHoriSpeed;
+        ballY += ballVertSpeed;
         Pressed = keysDown();
         Held = keysHeld();
         Released = keysUp();
-
-        if(ballX>0 && ballX<256){
-            ballX += ballHoriSpeed;
-            NF_MoveSprite(1,1,ballX,ballY);
-            if(ballX>=256){
-                ballX -= 2;
-                ballHoriSpeed *= -1;
-            }
-            if(ballX<=0){
-                ballX += 2;
-                //ballHoriSpeed *= -1;
-            }
-        }
-        if((ballY>0 && ballActiveScreen==1) || (ballY<192 && ballActiveScreen==1)){
-            ballY += ballVertSpeed;
-            NF_MoveSprite(1,1,ballX,ballY);
-            if(ballY>=192){
-                ballY -= 2;
-                ballVertSpeed *= -1;
-            }
-        }
+        
         scanKeys();
         NF_MoveSprite(1,0,player_x,160); //Move the paddle when expected to do so
+        NF_MoveSprite(1,1,ballX,ballY);
+        if(ballX<0||ballX>res_width){
+            ballHoriSpeed *= -1;
+        }
+        if(ballY<0||ballY>res_height){
+            ballVertSpeed *= -1;
+        }
+        
         if(KEY_LEFT & Held){
             player_x -= movespeed;
         }
-        if(KEY_RIGHT & Held){
+        else if(KEY_RIGHT & Held){
             player_x += movespeed;
         }
         // Wait for the screen refresh
