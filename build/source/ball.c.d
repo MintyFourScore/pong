@@ -1,4 +1,4 @@
-build/source/main.c.o: source/main.c \
+build/source/ball.c.o: source/ball.c source/ball.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/bios.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/ndstypes.h \
@@ -55,25 +55,8 @@ build/source/main.c.o: source/main.c \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/peripherals/slot2tilt.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/dsp.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/fifo.h \
- /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/tlf.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_lib.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_2d.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_sprite256.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_3d.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_affinebg.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_tiledbg.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_basic.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_bitmapbg.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_collision.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_media.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_mixedbg.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_sound.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_sprite256.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_sprite3d.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_text16.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_text.h \
- /opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_tiledbg.h \
- source/ball.h
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/tlf.h
+source/ball.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/bios.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/ndstypes.h:
@@ -131,21 +114,3 @@ build/source/main.c.o: source/main.c \
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/dsp.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/fifo.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/tlf.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_lib.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_2d.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_sprite256.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_3d.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_affinebg.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_tiledbg.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_basic.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_bitmapbg.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_collision.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_media.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_mixedbg.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_sound.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_sprite256.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_sprite3d.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_text16.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_text.h:
-/opt/wonderful/thirdparty/blocksds/external/nflib/include/nf_tiledbg.h:
-source/ball.h:

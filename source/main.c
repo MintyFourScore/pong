@@ -1,18 +1,17 @@
 #include <stdio.h>
 #include <nds.h>
 #include <nf_lib.h>
+#include "ball.h"
 u16 Pressed;
 u16 Held;
 u16 Released;
-u8 ballVertSpeed=1;
-u8 ballHoriSpeed=1;
-s16 ballX=128;
-s16 ballY=81;
-s16 res_width=256;
-s16 res_height=192;
-char coords[64];
-int main(int argc, char **argv)
-{
+#define screenWidth 256
+#define screenHeight 192
+
+Ball ball;
+memset(&ball,0,sizeof(ball)); //Creates a ball instance, apparently.
+
+int main(int argc, char **argv){
     s8 movespeed=2;
     s16 player_x=96;
     //u8 ballActiveScreen=1;
@@ -51,30 +50,19 @@ int main(int argc, char **argv)
     
     NF_CreateSprite(0,0,0,0,96,16); //Make a paddle sprite on the top screen
     NF_CreateSprite(1,0,1,0,player_x,160);
-    NF_CreateSprite(1,1,2,1,ballX,ballY); //Make the ball or something
+    NF_CreateSprite(1,1,2,1,ball->x,ball->y); //Make the ball or something
     while (1){
-        ballX += ballHoriSpeed;
-        ballY += ballVertSpeed;
+        scanKeys();
         Pressed = keysDown();
         Held = keysHeld();
         Released = keysUp();
-        
-        scanKeys();
-        NF_MoveSprite(1,0,player_x,160); //Move the paddle when expected to do so
-        NF_MoveSprite(1,1,ballX,ballY);
-        if(ballX<0||ballX>res_width){
-            ballHoriSpeed *= -1;
-        }
-        if(ballY<0||ballY>res_height){
-            ballVertSpeed *= -1;
-        }
-        
         if(KEY_LEFT & Held){
             player_x -= movespeed;
         }
         else if(KEY_RIGHT & Held){
             player_x += movespeed;
         }
+        NF_MoveSprite(1,0,player_x,160); //Move the paddle when expected to do so
         // Wait for the screen refresh
         NF_SpriteOamSet(0);
         NF_SpriteOamSet(1);
